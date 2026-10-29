@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "fifaclient",
+  "version": "${version}",
+  "name": "FIFACLIENT",
+  "description": "A visual-first client mod: big animated ClickGUI, themed HUD, keystrokes, zoom and more.",
+  "authors": ["FIFACLIENT"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.fifaclient.FifaClient"]
+  },
+  "mixins": [
+    { "config": "fifaclient.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
